@@ -13,7 +13,6 @@ if not User.objects.filter(username='admin').exists():
     User.objects.create_superuser('admin', 'admin@example.com', 'Admin123')
 EOF
   python manage.py load_file /app/inputs/input.json
-  python manage.py load_file /app/inputs/input.csv
   python manage.py load_file /app/inputs/input.xml
 
   touch "$FLAG_FILE"
