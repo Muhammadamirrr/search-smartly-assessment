@@ -4,7 +4,7 @@ import pandas as pd
 from django.core.management.base import BaseCommand
 import xml.etree.ElementTree as ET
 
-from data_ingestion_ms.models import PointOfInterest
+from data_ingestion.models import PointOfInterest
 
 
 class Command(BaseCommand):
